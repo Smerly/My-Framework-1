@@ -42,7 +42,7 @@ h2 {
 
 h1 {
 	font-size: 2.5rem;
-	color: var(--color-dark);
+	color: var(--color-primary);
 }
 em {
 	color: var(--color-primary);
@@ -73,4 +73,36 @@ button {
 button:hover {
 	background-color: var(--color-secondary);
 	border: 1px white solid;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input,
+textarea {
+	border: none;
+	border-bottom: 1px rgb(143, 143, 143) solid;
+	margin-left: 10px;
+}
+
+::placeholder {
+	color: var(--color-light);
+}
+
+.navbar {
+	background-color: var(--color-light);
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar ul li {
+	margin-right: 30px;
 }
